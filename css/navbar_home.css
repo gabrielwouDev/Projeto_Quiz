@@ -1,3 +1,20 @@
 .navbar-topo{
     background-color: #ffd52a;
+    display: flex;
+    font-family: sans-serif; /*Alterar dps para Open Sauce*/
+}
+
+.navbar-baixo{
+    background-color: #661f01;
+    display: flex;
+    height: 25px;
+    list-style: none;
+    box-shadow: 5px 1px 5px #2c2c2c;
+}
+
+.navbar-baixo a{
+    text-decoration: none;
+    color: #F5F5F5;
+    margin: 5px;
+    font-family: sans-serif;
 }
