@@ -1,0 +1,31 @@
+main{
+    display: grid;
+    justify-content: center;
+}
+
+button{
+    padding-top: 0;
+    width: 50%;
+    height: 90%;
+    background: linear-gradient(#ffdd01,#ff8b2d);
+    border-radius: 90px;
+}
+
+button div{
+    height: 90%;
+    display: flex;
+    border-radius: 90px;
+    margin: 2px;
+    background-color: #f8edd7;
+    align-items: center;
+}
+
+button img{
+    width: auto;
+    height: 50px;
+    margin-left: 10px;
+}
+
+button h1{
+    margin-left: 30px;
+}

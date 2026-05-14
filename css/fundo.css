@@ -1,5 +1,13 @@
 body,html{
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #f8edd7;
+}
+
+body{
+    background-image: url(../images/pokéquiz.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: center;
 }

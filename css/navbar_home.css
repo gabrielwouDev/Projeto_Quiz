@@ -2,6 +2,12 @@
     background-color: #ffd52a;
     display: flex;
     font-family: sans-serif; /*Alterar dps para Open Sauce*/
+    padding: 5px;
+}
+.navbar-topo img{
+    margin-right: 24px;
+    width: 75px;
+    height: auto;
 }
 
 .navbar-baixo{

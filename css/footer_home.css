@@ -1,0 +1,15 @@
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer-topo{
+    background-color: #661f01;
+    height: 25px;
+}
+.footer-baixo{
+    background-color: #ffd52a;
+    display: flex;
+    font-family: sans-serif; /*Alterar dps para Open Sauce*/
+}
