@@ -1,6 +1,13 @@
 main{
+    font-family: sans-serif;
     display: grid;
     justify-content: center;
+}
+
+.link-botao{
+    display: grid;
+    width: 100%;
+    text-decoration: none;
 }
 
 button{
@@ -9,6 +16,15 @@ button{
     height: 90%;
     background: linear-gradient(#ffdd01,#ff8b2d);
     border-radius: 90px;
+    justify-self: center;
+}
+
+button:active{
+    transform: scale(0.9)
+}
+
+button div:active{
+    background-color: #d6cdba;
 }
 
 button div{
