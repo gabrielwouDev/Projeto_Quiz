@@ -1,0 +1,29 @@
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1);
+    
+}
+
+.caixa-pergunta{
+    border: none;
+    display:flex;
+    background-color: #ffe9ab;
+    border-radius: 30px;
+    width: 700px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa-pergunta h2{
+    margin-right:40%;
+}
+.caixa-pergunta input{
+    width: 160px;
+    height: 40px;
+}
+
+
+
