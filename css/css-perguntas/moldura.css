@@ -1,0 +1,16 @@
+.fundo::before{
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    border-top: 80px solid #ff2d2d;
+    border-left: 20px solid #ff2d2d;
+    border-right: 20px solid #ff2d2d;
+    border-bottom: 20px solid #ff2d2d;
+
+    box-sizing: border-box;
+
+    pointer-events: none;
+}
