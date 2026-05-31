@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,7 +10,12 @@ body{
     background-color: #a7ddf2;
     box-sizing: border-box;
     overflow: hidden;
+    background-image: url(http://127.0.0.1:5500/Projeto_Quiz/images/fundo-pokebola.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position:bottom center;
 }
+
 
 
 

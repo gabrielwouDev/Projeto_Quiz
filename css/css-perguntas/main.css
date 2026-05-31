@@ -1,7 +1,10 @@
 main{
     display: grid;
     justify-content: center;
-    margin-top: 15vh;
+    padding-top: 35vh;
+    transform: translateY(-60px);
+    position: relative;
+    z-index: 1;
 }
 
 .caixa-pergunta{

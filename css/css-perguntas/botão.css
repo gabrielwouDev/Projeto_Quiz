@@ -1,5 +1,5 @@
 .link-botao{
-    margin-top: 10vh;
+    margin-top: 6vh;
     display: grid;
     width: 100%;
     text-decoration: none;
@@ -7,8 +7,8 @@
 
 button{
     padding-top: 0;
-    width: 50%;
-    height: 90%;
+    width: 40%;
+    height: 6vh;
     background: linear-gradient(#5aa7d8,#7fc8ff);
     border-radius: 90px;
     justify-self: center;
@@ -27,7 +27,7 @@ button div{
     display: flex;
     border-radius: 90px;
     margin: 2px;
-    background-color: #ebebeb;
+    background-color: #ffffff;
     justify-content: center;
     align-items: center;
 }
