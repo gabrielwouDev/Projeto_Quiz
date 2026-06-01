@@ -1,0 +1,16 @@
+.treinador-red{
+    position: absolute;
+    justify-self: flex-end;
+    align-self: center;
+    margin-top: 35vh;
+    margin-right: 25vw;
+    transform: scale(1.3);
+    z-index: 0;
+}
+
+.gengar{
+    position: absolute;
+    margin-top: 35vh;
+    justify-self: center;
+    align-self: center;
+}
