@@ -18,7 +18,15 @@ main h2{
 span{
     color: coral;
 }
-
+#agua-span{
+    color: cyan;
+}
+#grama-span{
+    color: chartreuse;
+}
+#eletrico-span{
+    color: yellow;
+}
 p{
     font-size: 1vw;
 }
@@ -51,5 +59,9 @@ img{
 .card-body{
     color: rgb(247, 247, 247);
     background-color: #dff4ff30;
-    min-height: 350px;
+    min-height: 400px;
+    max-height: 400px;
+}
+#texto-eletrico .card-body{
+    color: black;
 }

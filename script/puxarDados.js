@@ -39,17 +39,17 @@ let btn = document.getElementById('botao-confirmacao')
 btn.addEventListener('click',telaFinal)
 
 function telaFinal(){
-    // if(vencedor == "fogo"){
-    //     window.location.href =
-    // }
-    // if(vencedor == "agua"){
-    //     window.location.href =
-    // }
-    // if(vencedor == "grama"){
-    //     window.location.href =
-    // }
-    // if(vencedor == "eletrico"){
-    //     window.location.href = 
-    // }
+     if(vencedor == "fogo"){
+         window.location.href = "../views/telaFogo.html"
+     }
+     if(vencedor == "agua"){
+         window.location.href = "../views/telaAgua.html"
+     }
+     if(vencedor == "grama"){
+         window.location.href = "../views/telaGrama.html"
+     }
+     if(vencedor == "eletrico"){
+         window.location.href = "../views/telaEletrico.html"
+     }
 }
 console.log(vencedor)

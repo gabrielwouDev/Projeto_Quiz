@@ -1,6 +1,6 @@
 .fundo{
     position: relative;
-    min-height: 130vh;
+    min-height: 140vh;
 }
 .fundo::after{
     content: "";
