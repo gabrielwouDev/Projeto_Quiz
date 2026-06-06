@@ -10,7 +10,7 @@
     width: 100vw;
     height: 80px;
     background: #e21d1d;
-    z-index: -1;
+    z-index: 4;
 }
 
 .moldura{
@@ -21,4 +21,5 @@
     height: calc(100% + 10px);
     object-fit: fill;
     pointer-events: none;
+    z-index: 4;
 }

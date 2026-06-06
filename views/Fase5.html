@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Fase 5</title>
+    <link rel="stylesheet" href="../css/css-perguntas/fase5/botão.css">
+    <link rel="stylesheet" href="../css/css-perguntas/fundo.css">
+    <link rel="stylesheet" href="../css/css-perguntas/moldura.css">
+    <link rel="stylesheet" href="../css/css-perguntas/fase5/fase5.css">
+    <link rel="stylesheet" href="../css/css-perguntas/fase5/main.css">
+</head>
+<body>
+
+    <div class="fundo">
+        <img src="../images/Rotom_perguntas2.png" class="moldura">
+        <div class="efeitimPreto hidden">
+            <main>
+                <div class="caixa-pergunta">
+                    <h1>Você encontrou um Mewtwo o que voce faz?</h1>
+                </div>
+                <div class="caixa-alternativas">
+                <label class="alternativa">
+                    <input type="radio" name="escolha" value="fogo">
+                    <h2>Jogar uma pokebola</h2>
+                </label>
+                <label class="alternativa">
+                    <input type="radio" name="escolha" value="grama">
+                    <h2>Jogar uma fruta</h2>
+                </label>
+                <label class="alternativa">
+                    <input type="radio" name="escolha" value="agua">
+                    <h2>Iniciar uma batalha</h2>
+                </label>
+                <label class="alternativa">
+                    <input type="radio" name="escolha" value="eletrico">
+                    <h2>Correr</h2>
+                </label>
+                <button class="avancar">
+                <div>
+                    <h1>Continuar </h1>
+                    <h1>&rarr;</h1>
+                </div>
+                </button>
+            </main>
+        </div>
+        <div class="video">
+            <video autoplay muted playsinline id="videoPokemon">
+                <source src="../media/PokemonAnimeBackground.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <script>
+        const nPergunta = "pergunta5"
+        const proximaPagina = "../views/Confirmacao.html"
+    </script>
+    <script type="module" src="../script/SubirDados.js"></script>
+    <script src="../script/fase5.js"></script>
+</body>
+</html>

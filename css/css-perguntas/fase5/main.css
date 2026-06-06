@@ -1,9 +1,7 @@
 main{
     display: grid;
     justify-content: center;
-    padding-top: 35vh;
-    transform: translateY(-60px);
-    position: relative;
+    margin-top: 30vh;
 }
 
 .caixa-pergunta{
@@ -12,12 +10,13 @@ main{
     justify-self: center;
     align-items: center;
     padding: 10px;
-    height: 10vh;
+    height: 8vh;
     width: 40vw;
-    background-color: #dff4ff;
-    border: 5px solid #5aa7d8;
+    background-color: #dff4ff30;
+    border: 5px solid rgb(223, 223, 223);
     border-radius: 20px;
 }
+
 
 .caixa-alternativas{
     display: grid;
@@ -25,18 +24,7 @@ main{
     gap: 5vh 5vh;
     justify-content: center;
     padding-top: 10vh;
-    z-index: 1;
-}
-
-#perguntas-fase2{
-    display: grid;
-    grid-template-columns: repeat(1,0);
-    padding-top: 5vh;
-    gap: 2vh 2vh;
-}
-
-#perguntas-fase4{
-    gap: 5vh 20vw;
+    z-index: 3;
 }
 
 .alternativa{
@@ -44,7 +32,7 @@ main{
     width: 25vw;
     display: flex;
     align-items: center;
-    background-color: #dff4ff;
+    background-color: #dff4ff30;
     border: 5px solid transparent;
     border-radius: 20px;
     transition: border-color 0.2s;
@@ -54,12 +42,14 @@ main{
     margin:0;
     text-align: center;
 }
+
 .alternativa:has(input:checked){
     transform: scale(1.1);
-    border-color: #5aa7d8;
+    border-color: rgb(223, 223, 223);
 }
+
 .alternativa:hover{
-    border-color: #5aa7d8;
+    border-color: rgb(223, 223, 223);
 }
 
 .alternativa input{

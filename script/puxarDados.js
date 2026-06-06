@@ -2,6 +2,7 @@ const resultados = JSON.parse(sessionStorage.getItem('resultados'));
 document.getElementById('p2').value = resultados.pergunta2.texto;
 document.getElementById('p3').value = resultados.pergunta3.texto;
 document.getElementById('p4').value = resultados.pergunta4.texto;
+document.getElementById('p5').value = resultados.pergunta5.texto;
 
 let pontos = {
     fogo: 0,
@@ -38,16 +39,17 @@ let btn = document.getElementById('botao-confirmacao')
 btn.addEventListener('click',telaFinal)
 
 function telaFinal(){
-    if(vencedor == "fogo"){
-        window.location.href =
-    }
-    if(vencedor == "agua"){
-        window.location.href =
-    }
-    if(vencedor == "grama"){
-        window.location.href =
-    }
-    if(vencedor == "eletrico"){
-        window.location.href = 
-    }
+    // if(vencedor == "fogo"){
+    //     window.location.href =
+    // }
+    // if(vencedor == "agua"){
+    //     window.location.href =
+    // }
+    // if(vencedor == "grama"){
+    //     window.location.href =
+    // }
+    // if(vencedor == "eletrico"){
+    //     window.location.href = 
+    // }
 }
+console.log(vencedor)

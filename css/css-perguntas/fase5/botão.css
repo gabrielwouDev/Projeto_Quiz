@@ -1,11 +1,11 @@
-
 button{
     margin-top: 5vh;
     padding-top: 0;
-    width: 30%;
+    width: 60%;
     height: 6vh;
-    background: linear-gradient(#5aa7d8,#7fc8ff);
+    background: linear-gradient(#58f47a,#1e6216);
     border-radius: 90px;
+    margin-left: 100%;
     justify-self: center;
 }
 
@@ -14,11 +14,11 @@ button:active{
 }
 
 button div:active{
-    background-color: #dff4ff;
+    background-color: #e0e0e0;
 }
 
 button div{
-    height: 90%;
+    height: 85%;
     display: flex;
     border-radius: 90px;
     margin: 2px;
@@ -27,14 +27,7 @@ button div{
     align-items: center;
 }
 
+
 button h1{
     margin-left: 30px;
-}
-
-#botao-fase2{
-    z-index: 3;
-    position: absolute;
-    margin-right: 40vw;
-    width: 25vw;
-    align-self: flex-end;
 }
