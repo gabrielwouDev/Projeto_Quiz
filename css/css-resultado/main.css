@@ -1,0 +1,55 @@
+main{
+    display: grid;
+    font-family: sans-serif;
+    margin-top: 25vh;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 3vw;
+    justify-self: center;
+}
+
+main h2{
+    justify-self: center;
+    font-size: 2vw;
+}
+
+span{
+    color: coral;
+}
+
+p{
+    font-size: 1vw;
+}
+
+img{
+    width: 20vw;
+    height: auto;
+    justify-self: center;
+}
+.cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2vh;
+    gap: 2vh;
+}
+.card{
+    background-color: transparent;
+}
+
+.card-img-top{
+    height: 220px;
+    object-fit: contain;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.card-body{
+    color: rgb(247, 247, 247);
+    background-color: #dff4ff30;
+    min-height: 350px;
+}

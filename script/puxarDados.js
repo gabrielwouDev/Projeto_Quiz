@@ -16,7 +16,7 @@ const pesos = {
     pergunta2: 1,
     pergunta3: 2,
     pergunta4: 3,
-    pergunta5: 4
+    pergunta5: 3
 };
 
 for(let pergunta in resultados){
