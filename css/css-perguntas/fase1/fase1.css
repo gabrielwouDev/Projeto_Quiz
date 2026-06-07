@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;   
+    background-image: url(tcgBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.caixa-pergunta{
+    position: absolute;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 1vw;
+    border: 3px solid white;
+    border-radius: 20px;
+    color: rgb(241, 241, 241);
+    font-size: small;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 35%;
+    z-index: 2;
+}
+
+
+
+.container{
+    display: flex;
+    transform: scale(0.50);
+    gap: 15px;
+    transform-origin: bottom center;
+    margin-bottom: 20px;
+}
+
+.container div {
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.container div:hover{
+    transform: scale(1.20) translateY(-44px);
+    z-index: 10; 
+    position: relative; 
+}
+
+.container div.ativo {
+    transform: scale(2) translateY(-215px);
+    z-index: 20;
+}
+
+input[type="radio"] {
+    display: none;
+}

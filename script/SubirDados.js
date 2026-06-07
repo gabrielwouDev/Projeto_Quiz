@@ -8,7 +8,7 @@ function exibir(){
     if(escolha === null){
         alert("Escolha uma alternativa!")
     }
-    let alternativa = escolha.parentElement.querySelector('h2').textContent;
+    let alternativa = escolha.parentElement.querySelector('img')?.alt || escolha.parentElement.querySelector('h2')?.textContent;
     let resultados = JSON.parse(sessionStorage.getItem('resultados')) || {};
     resultados[nPergunta] = {
         texto: alternativa,
