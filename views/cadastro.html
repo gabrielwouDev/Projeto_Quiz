@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="../css/css-home/fundo.css">
-    <link rel="stylesheet" href="../css/css-formulario/form.css">
+    <link rel="stylesheet" href="../css/css-cadastro/form.css">
     <link rel="stylesheet" href="../css/css-home/moldura.css">
+    <link rel="stylesheet" href="../css/css-cadastro/botão.css">
 </head>
 <body>
     <div class="fundo">
@@ -41,14 +42,21 @@
                         <option value="MT">MT</option>
                         <option value="AC">AC</option>
                     </select>
-                    <div class="div_genero">     
-                        <label for="" class="genero"> <span>MASC</span> <input name="genero" value="MASC" type="radio"></label>
-                        <label for="" class="genero"> <span>FEM</span> <input name="genero" value="FEM" type="radio"></label>
-                        <label for="" class="genero"> <span>OUTROS</span> <input name="genero" value="OUTROS" type="radio"></label>                  
+                    <div class="div_genero">
+                        <p>Gênero:</p>     
+                        <label for="" class="genero"> <span>Masc</span> <input name="genero" value="MASC" type="radio"></label>
+                        <label for="" class="genero"> <span>Fem</span> <input name="genero" value="FEM" type="radio"></label>
+                        <label for="" class="genero"> <span>Outros</span> <input name="genero" value="OUTROS" type="radio"></label>                  
                     </div>
                 </div>
             </form>
+            <button class="avancar">
+                <div>
+                    <p>Continuar &rarr;</p>
+                </div>
+            </button>
         </main>
     </div>
+    <script src="../script/cadastro.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+main{
+    margin-top: 30vh;
+    display: grid;
+    justify-self: center;
+    min-width: 40vw;
+    min-height: 50vh;
+    max-height: 446px;
+    font-family: sans-serif;
+    background-color: #dff4ff;
+    border-radius: 20px;
+    border: 10px solid #5aa7d8;
+}
+
+h1{
+    margin-top: 1vh;
+    justify-self: center;
+}
+
+.dados{
+    margin-left: 1vh;
+    margin-bottom: 7vh;
+    font-size: 3vh;
+}
+
+.dados div{
+    margin-top: 1vh;
+}
+.div_btn{
+    display: flex;
+}
+.div_btn img{
+    margin-left: 10px;
+    width: 50px;
+    height: auto;
+}

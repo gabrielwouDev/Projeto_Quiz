@@ -1,0 +1,37 @@
+button{
+    padding-top: 0;
+    width: 40%;
+    height: 6vh;
+    background: linear-gradient(#5aa7d8,#7fc8ff);
+    border-radius: 90px;
+    justify-self: center;
+}
+
+button:active{
+    transform: scale(0.9)
+}
+
+button div:active{
+    background-color: #dff4ff;
+}
+
+button div{
+    height: 90%;
+    display: flex;
+    border-radius: 90px;
+    margin: 2px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+button p{
+    font-size: 30px;
+}
+
+.botoes{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
