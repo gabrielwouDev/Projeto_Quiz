@@ -24,5 +24,5 @@ voltar.addEventListener('click',()=>{
 let avancar = document.querySelector('.avancar')
 
 avancar.addEventListener('click',()=>{
-    window.location.href = "../index.html"
+    window.location.href = "../views/Fase1.html"
 })
