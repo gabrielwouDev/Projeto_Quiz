@@ -29,7 +29,6 @@ let vencedor = "";
 let maiorPontuacao = 0;
 
 for(let elemento in pontos){
-
     if(pontos[elemento] > maiorPontuacao){
         maiorPontuacao = pontos[elemento];
         vencedor = elemento;
@@ -40,7 +39,7 @@ let btn = document.getElementById('botao-confirmacao')
 btn.addEventListener('click',telaFinal)
 
 function telaFinal(){
-     if(vencedor == "fogo"){
+     if(vencedor == "000"){
          window.location.href = "../views/telaFogo.html"
      }
      if(vencedor == "agua"){

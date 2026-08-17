@@ -3,14 +3,17 @@ main{
     position: relative;
     justify-content: center;
     font-family: sans-serif;
-    margin-top: 30vh;
+    margin-top: 25vh;
 }
+
+
 
 .confirmacao{
     width: 320px;
     padding: 20px;
     border-radius: 15px;
     background: #fff;
+    margin-top: 2vh;
 }
 
 .campo{
