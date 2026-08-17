@@ -12,11 +12,11 @@ function exibir(){
     let resultados = JSON.parse(sessionStorage.getItem('resultados')) || {};
     resultados[nPergunta] = {
         texto: alternativa,
-        elemento: escolha.value
+        valor: escolha.value
     }
     sessionStorage.setItem('resultados', JSON.stringify(resultados))
     window.location.href = proximaPagina;                     
 }
 
-
+function pokemonEscolhido["1"];
 
