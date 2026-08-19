@@ -2,11 +2,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 85vh;
 }
 
+
 .conteudo{
-    margin-top: 7vh;
     width: 45vw;
     max-width: 800px;
     min-width: 400px;
