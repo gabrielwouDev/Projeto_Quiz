@@ -3,11 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(135deg,
-      #eaeef8 60%,
-      #b9fcf2 40%
-    );
-
+    background-color: linear-gradient(135deg #efefef, #f0f8f7);
     box-sizing: border-box;
     overflow: hidden;
 }
