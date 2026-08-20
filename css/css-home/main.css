@@ -5,14 +5,22 @@ main{
     min-height: 85vh;
 }
 
+.moldura{
+    display: flex;
+    background-color: rgb(209, 77, 77);
+    padding: 20px;
+    height: 50vh;
+    width: 50vw;
+    justify-content: center;
+    border-radius: 20px;
+}
+
 
 .conteudo{
     width: 45vw;
-    max-width: 800px;
-    min-width: 400px;
     padding: 20px 30px;
     background-color: #dff4ff;
-    border: 10px solid #5aa7d8;
+    border: 10px solid white;
     border-radius: 25px;
     text-align: center;
     display: flex;
@@ -21,8 +29,3 @@ main{
     box-sizing: border-box;
 }
 
-.conteudo p{
-    margin: 10px 0;
-    line-height: 1.5;
-    font-size: 1.1rem;
-}
