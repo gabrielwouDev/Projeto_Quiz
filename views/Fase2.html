@@ -3,47 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/css-perguntas/fundo.css">
-    <link rel="stylesheet" href="../css/css-perguntas/main.css">
-    <link rel="stylesheet" href="../css/css-perguntas/botão.css">
-    <link rel="stylesheet" href="../css/css-perguntas/moldura.css">
-    <link rel="stylesheet" href="../css/css-perguntas/personagens.css">
+    <link rel="stylesheet" href="../css/css-perguntas/fase2/fundo.css">
+    <link rel="stylesheet" href="../css/css-perguntas/fase2/main.css">
+    <link rel="stylesheet" href="../css/css-perguntas/fase2/botão.css">
+    <link rel="stylesheet" href="../css/css-perguntas/fase2/navbar.css">
     <title>Fase 2</title>
 </head>
 <body>
-    <div class="fundo">
-        <img src="../images/Rotom_perguntas2.png" class="moldura">
-        <main>
-            <div class="caixa-pergunta">
-                <h1>Escolha um movimento para atacar o pokémon oponente</h1>           
-            </div>
-            <img src="../images/batalha-hud.jpg" class="batalha">
-            <div class="caixa-alternativas" id="perguntas-fase2">
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="eletrico">
-                    <h2>Investida</h2>
-                </label>
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="fogo">
-                    <h2>Mordida</h2>
-                </label>
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="agua">
-                    <h2>Enrolar</h2>
-                </label>
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="grama">
-                    <h2>Cabeçada</h2>
-                </label>
-            </div>
-            <button class="avancar" id="botao-fase2">
-                <div>
-                    <h1>Continuar </h1>
-                    <h1>&rarr;</h1>
-                </div>
-            </button>
-        </main>
+    <div class="navbar">
+        <h1>PokéQuiz</h1>
     </div>
+    <main>
+        <div class="caixa-pergunta">
+            <h1>Escolha um movimento para atacar o pokémon oponente</h1>           
+        </div>
+
+        <div class="batalha">
+            <img src="../images/batalha-hud.jpg">
+        </div>
+
+        <div class="caixa-alternativas">
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="eletrico">
+                <h2>Investida</h2>
+            </label>
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="fogo">
+                <h2>Mordida</h2>
+            </label>
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="agua">
+                <h2>Enrolar</h2>
+            </label>
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="grama">
+                <h2>Cabeçada</h2>
+            </label>
+        </div>
+        <button class="avancar">
+            <div>
+                <h1>Continuar </h1>
+                <h1>&rarr;</h1>
+            </div>
+        </button>
+    </main>
     <script>
         const nPergunta = "pergunta2"
         const proximaPagina = "../views/Fase3.html"

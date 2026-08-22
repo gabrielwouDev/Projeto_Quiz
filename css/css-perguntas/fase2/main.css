@@ -1,12 +1,18 @@
 main{
     display: grid;
-    justify-content: center;
-    padding-top: 35vh;
-    transform: translateY(-60px);
-    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "pergunta pergunta"
+        "batalha alternativas"
+        "botao botao";
+    align-items: start;
 }
 
+
+
 .caixa-pergunta{
+    grid-area: pergunta;
+    margin-top: 8vh;
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -19,17 +25,26 @@ main{
     border-radius: 20px;
 }
 
-.caixa-alternativas{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 5vh 5vh;
-    justify-content: center;
-    padding-top: 10vh;
-    z-index: 1;
+.batalha{
+    grid-area: batalha;
+    margin-top: 10vh;
+    margin-left: 7vh;
+
 }
 
-#perguntas-fase4{
-    gap: 5vh 20vw;
+.batalha img{
+    width: 40vw;
+    height: auto;
+}
+
+.caixa-alternativas{
+    grid-area: alternativas;
+    margin-top: 15vh;
+    margin-right: 10vw;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    gap: 5px 5px;
 }
 
 .alternativa{
@@ -42,15 +57,18 @@ main{
     border-radius: 20px;
     transition: border-color 0.2s;
 }
+
 .alternativa h2{
     flex-grow: 1;
     margin:0;
     text-align: center;
 }
+
 .alternativa:has(input:checked){
     transform: scale(1.1);
     border-color: #5aa7d8;
 }
+
 .alternativa:hover{
     border-color: #5aa7d8;
 }
