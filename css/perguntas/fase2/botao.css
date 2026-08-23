@@ -10,6 +10,20 @@ button{
     justify-self: center;
 }
 
+/*Tablet: */
+@media (min-width:471px) and (max-width:800px){
+    button{
+        width: 70%;
+    }
+}
+
+/*Mobile: */
+@media (max-width:470px){
+    button{
+        width: 80%;
+    }
+}
+
 button:active{
     transform: scale(0.9)
 }

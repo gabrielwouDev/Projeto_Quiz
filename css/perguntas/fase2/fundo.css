@@ -6,7 +6,7 @@
 body{
     font-family: sans-serif;
     background-color: #a7ddf2;
-    background-image: url(http://127.0.0.1:5500/Projeto_Quiz/images/fundo-pokebola.png);
+    background-image: url(../../../assets/images/fundo-pokebola.png);
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
