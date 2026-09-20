@@ -1,9 +1,12 @@
 import express from 'express'
+import cors from 'cors'
 
 import { inserirUsuario } from './dao/usuario/inserirUsuario.js'
 
 const app = express()
 
+
+app.use(cors());
 app.use(express.json())
 
 app.get('/', (req, res) => {
@@ -14,10 +17,9 @@ app.get('/', (req, res) => {
 
 
 app.post('/InserirUsuario', async (req, res) => {
-
-    let {} = req.body   
-    let infos = [codigo, nome, sobreNome, cpf, telefone, id_limite, id_endereco ]
-    let results = await incluirUsuario(infos)
+    let { nome, email , endereco , genero , estado , resultado } = req.body   
+    let infos = [nome, email , endereco , genero , estado , resultado ]
+    let results = await inserirUsuario(infos)
 
     console.log(results)
     res.json(results)
