@@ -1,10 +1,15 @@
 const resultados = JSON.parse(sessionStorage.getItem('resultados'));
+const usuario = JSON.parse(sessionStorage.getItem('pessoa')) 
+
 document.getElementById('p1').value = resultados.pergunta1.texto;
 document.getElementById('p2').value = resultados.pergunta2.texto;
 document.getElementById('p3').value = resultados.pergunta3.texto;
 document.getElementById('p4').value = resultados.pergunta4.texto;
 document.getElementById('p5').value = resultados.pergunta5.texto;
 
+function calculaVencedor() {
+    
+}
 let pontos = {
     fogo: 0,
     agua: 0,
@@ -53,4 +58,30 @@ function telaFinal(){
          window.location.href = "../views/telaEletrico.html"
      }
 }
-console.log(vencedor)
+
+//Enviando dados para o servidor express
+
+let url = ("http://localhost:3000/InserirUsuario");
+
+let object = {
+    'nome': usuario.nome,
+    'email': usuario.email,
+    'endereco': usuario.endereco,
+    'genero': usuario.genero,
+    'estado': usuario.estado,
+    'resultado': vencedor
+}
+
+const options = { 
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }, 
+    method: "POST", 
+    body: JSON.stringify(object) 
+}
+
+console.log(object)
+//let resp = await fetch(url, options)
+//let dados = await resp.json()
+

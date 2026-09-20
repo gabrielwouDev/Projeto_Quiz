@@ -1,0 +1,25 @@
+{
+  "name": "projeto_quiz",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/gabrielwouDev/Projeto_Quiz#readme",
+  "bugs": {
+    "url": "https://github.com/gabrielwouDev/Projeto_Quiz/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielwouDev/Projeto_Quiz.git"
+  },
+  "license": "ISC",
+  "author": "gabrielwouDev",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.24.4",
+    "nodemon": "^3.1.14"
+  }
+}
