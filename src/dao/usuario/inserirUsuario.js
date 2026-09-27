@@ -1,4 +1,4 @@
-import {conexao} from '../conexão.js'
+import {conexao} from '../conexao.js'
 
 async function inserirUsuario(infos){
     const data = [infos]

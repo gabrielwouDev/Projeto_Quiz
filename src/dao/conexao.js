@@ -3,7 +3,7 @@ import mysql from "mysql2/promise"
 async function conexao() {
     const pool = mysql.createPool({
         host: '', 
-        port: ,
+        port: '',
         user: '', 
         password: '', 
         database: ''
