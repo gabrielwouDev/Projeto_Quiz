@@ -2,11 +2,11 @@ import mysql from "mysql2/promise"
 
 async function conexao() {
     const pool = mysql.createPool({
-        host: '127.0.0.1', 
-        port: 3306,
-        user: 'root', 
-        password: '22052009G', 
-        database: 'bdQuiz'
+        host: '1', 
+        port: 1,
+        user: '1', 
+        password: '1', 
+        database: '1'
     })
     
     return pool
