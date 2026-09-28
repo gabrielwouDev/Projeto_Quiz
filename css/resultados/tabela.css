@@ -1,0 +1,22 @@
+.tabela-alternativas{
+    grid-area:tabela;
+    justify-self: center;
+    margin-top: 2vw;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+thead{
+    border: 1px solid black;
+    background-color: #ffee00af;
+}
+
+tr{
+    border: 1px solid black;
+    background-color: #ffee00af;
+}
+
+
+

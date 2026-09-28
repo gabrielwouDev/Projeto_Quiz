@@ -69,6 +69,11 @@ async function telaFinal(){
         'endereco': usuario.endereco,
         'genero': usuario.genero,
         'estado': usuario.estado,
+        'resposta1': resultados.pergunta1.texto,
+        'resposta2': resultados.pergunta2.texto,
+        'resposta3': resultados.pergunta3.texto,
+        'resposta4': resultados.pergunta4.texto,
+        'resposta5': resultados.pergunta5.texto,
         'resultado':  calculaVencedor()
     }
    
@@ -85,7 +90,7 @@ async function telaFinal(){
     let dados = await resp.json()
     
     if(calculaVencedor() == "fogo"){
-        window.location.href = "../resultados/telaFogo.html"
+        window.location.href = "../resultados/telaFogoV2.html"
     }
     if(calculaVencedor() == "agua"){
         window.location.href = "../resultados/telaAgua.html"

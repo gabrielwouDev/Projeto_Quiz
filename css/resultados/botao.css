@@ -1,0 +1,17 @@
+button{
+    grid-area:botao;
+    width: 250px;
+    height: 70px;
+    background-color: #ffee00b7;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-left: 12vw;
+}
+
+button:hover{
+    border: 2px solid black;
+}
+
+button:active{
+    transform: scale(0.9)
+}

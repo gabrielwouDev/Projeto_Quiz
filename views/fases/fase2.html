@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/perguntas/fundo.css"> 
-    <link rel="stylesheet" href="../css/perguntas/main.css"> 
-    <link rel="stylesheet" href="../css/perguntas/botão.css"> 
-    <link rel="stylesheet" href="../css/perguntas/moldura.css"> 
-    <link rel="stylesheet" href="../css/perguntas/personagens.css"> 
+    <link rel="stylesheet" href="../../css/fases/fundo.css">    
+    <link rel="stylesheet" href="../../css/fases/main.css"> 
+    <link rel="stylesheet" href="../../css/fases/botao.css"> 
+    <link rel="stylesheet" href="../../css/fases/moldura.css"> 
+    <link rel="stylesheet" href="../../css/fases/personagens.css"> 
     <title>Fase 2</title>
 </head>
 <body>
     <div class="fundo">
-        <img src="../assets/images/Rotom_perguntas2.png" class="moldura">
+        <img src="../../assets/images/Rotom_perguntas2.png" class="moldura">
         <main>
             <div class="caixa-pergunta">
                 <h1>Escolha um movimento para atacar o pokémon oponente</h1>           
             </div>
-            <img src="../assets/images/batalha-hud.jpg" class="batalha">
+            <img src="../../assets/images/batalha-hud.jpg" class="batalha">
             <div class="caixa-alternativas" id="perguntas-fase2">
                 <label class="alternativa">
                     <input type="radio" name="escolha" value="eletrico">
@@ -46,8 +46,8 @@
     </div>
     <script>
         const nPergunta = "pergunta2"
-        const proximaPagina = "../views/Fase3.html"
+        const proximaPagina = "../fases/fase3.html"
     </script>
-    <script type="module" src="../script/SubirDados.js"></script>
+    <script type="module" src="../../src/subirDados.js"></script>
 </body>
 </html>
