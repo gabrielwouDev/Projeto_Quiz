@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(../../../assets/images/fundos/bg_kanto.webp);
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.batalha{
+    z-index: 0;
+    position: absolute;
+    margin-top: 45vh;
+    align-self: center;
+    transform: scale(0.5);
+}
+
+
+
+
+        
+        
