@@ -69,11 +69,6 @@ async function telaFinal(){
         'endereco': usuario.endereco,
         'genero': usuario.genero,
         'estado': usuario.estado,
-        'resposta1': resultados.pergunta1.texto,
-        'resposta2': resultados.pergunta2.texto,
-        'resposta3': resultados.pergunta3.texto,
-        'resposta4': resultados.pergunta4.texto,
-        'resposta5': resultados.pergunta5.texto,
         'resultado':  calculaVencedor()
     }
    
@@ -88,9 +83,33 @@ async function telaFinal(){
 
     let resp = await fetch(url, options)
     let dados = await resp.json()
-    
+
+    let url2 = ("http://localhost:3000/InserirRespostas");
+
+    let Respostas = {
+        'resposta1': resultados.pergunta1.texto,
+        'resposta2': resultados.pergunta2.texto,
+        'resposta3': resultados.pergunta3.texto,
+        'resposta4': resultados.pergunta4.texto,
+        'resposta5': resultados.pergunta5.texto,
+        'idUsuario': ultimo_id,
+    }
+   
+    const options2 = { 
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }, 
+        method: "POST", 
+        body: JSON.stringify(Respostas) 
+    }
+
+    let resp2 = await fetch(url2, options2)
+    let dados2 = await resp2.json()
+
+
     if(calculaVencedor() == "fogo"){
-        window.location.href = "../resultados/telaFogoV2.html"
+        window.location.href = "../resultados/telaFogo.html"
     }
     if(calculaVencedor() == "agua"){
         window.location.href = "../resultados/telaAgua.html"

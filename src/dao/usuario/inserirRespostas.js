@@ -1,10 +1,9 @@
 import {conexao} from '../conexao.js'
 
-async function inserirUsuario(infos){
+async function inserirRespostas(infos){
     const data = [infos]
-    const sql = `INSERT INTO tbUsuario (nome, email, endereco, genero, estado, resultado) VALUES ?`
+    const sql = `INSERT INTO tbRespostas (resposta1, resposta2, resposta3 , resposta4, resposta5, idUsuario) VALUES ?`
     const conn = await conexao()
-    const ultimo_id = result.insertId;
     
     try {
         // Executar a consulta
@@ -17,4 +16,4 @@ async function inserirUsuario(infos){
       }
 }
 
-export {inserirUsuario}
+export {inserirRespostas}

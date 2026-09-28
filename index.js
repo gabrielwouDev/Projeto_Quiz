@@ -2,7 +2,8 @@ import express from 'express'
 import cors from 'cors'
 
 import { inserirUsuario } from './src/dao/usuario/inserirUsuario.js'
-import { buscarUsuario } from './src/dao/usuario/buscarUsuario.js'
+import { buscarDados } from './src/dao/usuario/buscarDados.js'
+import { inserirRespostas } from './src/dao/usuario/inserirRespostas.js'
 
 const app = express()
 
@@ -18,20 +19,29 @@ app.get('/', (req, res) => {
 
 
 app.post('/InserirUsuario', async (req, res) => {
-    let { nome, email, endereco, genero, estado, resposta1, resposta2, resposta3 , resposta4, resposta5, resultado } = req.body   
-    let infos = [ nome, email, endereco, genero, estado, resposta1, resposta2, resposta3 , resposta4, resposta5, resultado ]
+    let { nome, email, endereco, genero, estado, resultado } = req.body   
+    let infos = [ nome, email, endereco, genero, estado, resultado ]
     let results = await inserirUsuario(infos)
 
     console.log(results)
     res.json(results)
 })
 
-app.get('/buscarUsuario', async (req,res)=>{
+app.post('/InserirRespostas', async (req, res) => {
+    let {resposta1, resposta2, resposta3 , resposta4, resposta5, idUsuario} = req.body   
+    let infos = [resposta1, resposta2, resposta3 , resposta4, resposta5, idUsuario]
+    let results = await inserirRespostas(infos)
+
+    console.log(results)
+    res.json(results)
+})
+
+app.get('/buscarDados', async (req,res)=>{
     try {
-        const usuario = await buscarUsuario()
-        res.json(usuario)
+        const dados = await buscarDados()
+        res.json(dados)
     } catch (erro) {
-        res.status(500).json({ erro: 'Erro ao listar Usuario', detalhes: erro.message })
+        res.status(500).json({ erro: 'Erro ao listar Usuarios', detalhes: erro.message })
     }
 })
 
