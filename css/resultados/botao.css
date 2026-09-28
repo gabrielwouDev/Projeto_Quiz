@@ -15,3 +15,11 @@ button:hover{
 button:active{
     transform: scale(0.9)
 }
+
+#botao-grama{
+    background-color: #019731d5;
+}
+
+#botao-agua{
+    background-color: #1688ff;
+}

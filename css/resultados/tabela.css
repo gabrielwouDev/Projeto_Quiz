@@ -1,22 +1,68 @@
 .tabela-alternativas{
     grid-area:tabela;
+    max-width: 700px;
     justify-self: center;
     margin-top: 2vw;
 }
 
 table{
     border-collapse: collapse;
+    box-shadow: 10px 10px 0px  black;
 }
 
-thead{
+
+/*Estilo da tabela de Fogo (estilo base)*/
+th{
+    padding: 5px;
+    height: 30px;
     border: 1px solid black;
-    background-color: #ffee00af;
+    background-color: rgb(255, 151, 65);
 }
+
 
 tr{
-    border: 1px solid black;
-    background-color: #ffee00af;
+    background-color:#ffffff;
 }
+tr:nth-child(even) {
+    background-color: #ffead6;
+}
+
+td{
+    padding: 5px;
+    color: black;
+}
+
+
+
+/*Estilo da tabela de grama*/
+
+#grama th{
+    background-color: #019731;
+}
+
+#grama tr:nth-child(even) {
+    background-color: #d7ffd6;
+}
+
+/*Estilo da tabela eletrica*/
+#eletrico th{
+    background-color: #f9fd02a6;
+}
+
+#eletrico tr:nth-child(even) {
+    background-color: #fff899;
+}
+
+/*Estilo da tabela de agua*/
+#agua th{
+    background-color: #1688ff;
+}
+
+#agua tr:nth-child(even) {
+    background-color: #b6d9ff;
+}
+
+
 
 
 

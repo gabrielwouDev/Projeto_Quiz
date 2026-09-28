@@ -1,11 +1,7 @@
 import {conexao} from '../conexao.js'
 
 async function buscarDados(){
-  const sql = `
-  SELECT Usuario.idUsuario , Respostas.resposta1, Respostas.resposta2, Respostas.resposta3, Respostas.resposta4, Respostas.resposta5 FROM tbRespostas AS Respostas
-    INNER JOIN tbUsuario AS Usuario
-      ON respostas.idUsuario = Usuario.idUsuario;
- `;
+  const sql = 'SELECT idUsuario, resposta1, resposta2, resposta3, resposta4, resposta5, resultado FROM tbUsuario';
   
   const conn = await conexao()
   try {

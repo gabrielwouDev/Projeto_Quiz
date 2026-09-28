@@ -19,11 +19,21 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    border-radius: 15px;
+}
+
+#caixa-grama{
+    background-color: #019731d5;
 }
 
 #caixa-eletrico{
     border: 2px solid black;
 }
+
+#caixa-agua{
+    background-color: #1688ff;
+}
+
 
 .caixa-sugestoes{
     grid-area:sugestoes;

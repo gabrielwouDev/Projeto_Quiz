@@ -12,6 +12,7 @@ function gerarLinhas(dados){
     let td4 = gerarHtml('td')
     let td5 = gerarHtml('td')
     let td6 = gerarHtml('td')
+    let td7 = gerarHtml('td')
 
     td1.textContent = dados.idUsuario
     td2.textContent = dados.resposta1
@@ -19,6 +20,7 @@ function gerarLinhas(dados){
     td4.textContent = dados.resposta3
     td5.textContent = dados.resposta4
     td6.textContent = dados.resposta5
+    td7.textContent = dados.resultado
 
     tr.appendChild(td1)
     tr.appendChild(td2)
@@ -26,6 +28,7 @@ function gerarLinhas(dados){
     tr.appendChild(td4)
     tr.appendChild(td5)
     tr.appendChild(td6)
+    tr.appendChild(td7)
 
     return tr
 }
