@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+    z-index: 1;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #ff3131, #ff914d);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.pokemon-fundo{
+    position: absolute;
+    margin-left: 40%;
+}
+
+#agua{
+    background-image: linear-gradient(135deg, #5affff, #1688ff);
+}
+
+#eletrico{
+    background-image: linear-gradient(135deg, #fbff33, #ff8947);
+}
+
+#grama{
+    background-image: linear-gradient(135deg, #9cff79, #007425);
+}

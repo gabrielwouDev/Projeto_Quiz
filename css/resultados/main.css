@@ -1,0 +1,90 @@
+main{
+    display: grid;
+    padding-top: 3vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "topo topo"
+        "tabela sugestoes"
+        "botao botao";
+    z-index: 2;
+}
+
+.caixa-topo{
+    grid-area:topo;
+    display: flex;
+    background-color: #ffee00b7;
+    width: 20vw;
+    height: 5vw;
+    margin-left: 10vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#caixa-eletrico{
+    border: 2px solid black;
+}
+
+.caixa-sugestoes{
+    grid-area:sugestoes;
+    justify-self: flex-end;
+    width: 50vw;
+    height: 35vw;
+    margin-right: 2vw;
+    color: rgb(235, 235, 235);
+    background-color: #00000059;
+    border-radius: 15px;
+    
+}
+
+.titulo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo img{
+    width: 150px;
+    height: auto;
+}
+
+.paragrafo{
+    margin-top: 20px;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafo p{
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.caixa-pokemons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pokemon-item{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon-item img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.pokemon-item p{
+    margin-top: 8px;
+}
+
+
+
