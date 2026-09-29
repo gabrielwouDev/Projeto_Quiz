@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Nunito Sans';
+}
+
+.fundo{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.img-fundo{
+    max-width: 100%;
+    height: 100vh;
+}
+
+.img-fundo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
