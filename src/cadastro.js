@@ -13,5 +13,5 @@ function pegarDados(){
     }
     
     sessionStorage.pessoa = JSON.stringify(pessoa)
-    window.location.href = 'confirmarCadastro.html'
+    window.location.href = '../fases/fase1.html'
 }

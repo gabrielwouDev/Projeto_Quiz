@@ -1,0 +1,19 @@
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: center;
+    background-color: #05baf6;
+    color: aliceblue;
+    border: transparent;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+button:hover{
+    background-color: #07a0d3;
+}
+
+button:active{
+    transform: scale(0.9);
+}
