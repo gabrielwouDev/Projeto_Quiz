@@ -12,7 +12,8 @@ main{
     padding: 10px;
     height: 8vh;
     width: 40vw;
-    background-color: #dff4ffb6;
+    color: aliceblue;
+    background-color: #dff4ff48;
     border: 5px solid rgb(223, 223, 223);
     border-radius: 20px;
 }
@@ -32,6 +33,7 @@ main{
     width: 25vw;
     display: flex;
     align-items: center;
+    color: aliceblue;
     background-color: #dff4ff48;
     border: 5px solid transparent;
     border-radius: 20px;

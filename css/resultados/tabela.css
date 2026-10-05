@@ -1,6 +1,8 @@
 .tabela-alternativas{
     grid-area:tabela;
     max-width: 700px;
+    max-height: 500px;
+    overflow-y: auto;
     justify-self: center;
     margin-top: 2vw;
 }
@@ -23,9 +25,11 @@ th{
 tr{
     background-color:#ffffff;
 }
+
 tr:nth-child(even) {
     background-color: #ffead6;
 }
+
 
 td{
     padding: 5px;

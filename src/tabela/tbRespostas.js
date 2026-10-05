@@ -8,3 +8,4 @@ for (let i = 0; i < Respostas.length; i++) {
     let l = gerarLinhas(Respostas[i])
     tbRespostas.append(l)
 }
+

@@ -34,6 +34,7 @@ main{
     width: 25vw;
     display: flex;
     align-items: center;
+    color: aliceblue;
     background-color: #dff4ff48;
     border: 5px solid transparent;
     border-radius: 20px;
