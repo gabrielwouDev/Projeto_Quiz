@@ -1,0 +1,16 @@
+button{
+    color: #494949;
+    font-family: 'pokemonPixel';
+    grid-area: botao;
+    background-color: #FDFBFD;
+    border: none;
+    width: 28.5vw;
+    margin-left: 55px;
+    height: 22.8vh;
+    justify-self: center;
+    margin-top: 55.3vh;
+}
+
+button:active{
+    background-color:#e7e5e7;
+}
