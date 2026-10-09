@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/pages/cadastro/main.css">
     <link rel="stylesheet" href="../../css/pages/cadastro/form.css">
     <link rel="stylesheet" href="../../css/pages/cadastro/botao.css">
+    <link rel="stylesheet" href="../../css/pages/cadastro/dialog.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
     </style>
@@ -19,15 +20,15 @@
             <form action="">
                 <div class="campo">
                     <label for="">Nome:</label>
-                    <input type="text" name="nome" >
+                    <input type="text" name="nome" placeholder="Nome completo">
                 </div>
                 <div class="campo">
                     <label for="">E-mail:</label>
-                    <input type="text" name="email" >
+                    <input type="text" name="email" placeholder="exemplo@teste.com">
                 </div>
                 <div class="campo">
                     <label for="">Endereço:</label>
-                    <input type="text" name="endereco" >
+                    <input type="text" name="endereco" placeholder="R. tal n°">
                 </div>
                 <div class="campo">
                     <label for="">Estado:</label>
@@ -57,11 +58,34 @@
                     </div>
                 </button>
             </form>
+            <dialog>
+                <h1>Seus dados estão corretos?</h1>
+                <div class="dados">
+                    <div> <label for="">NOME: </label> <span class="dados-dialog"></span></div>
+                    <div> <label for="">EMAIL: </label> <span class="dados-dialog"></span></div>
+                    <div> <label for="">ENDEREÇO: </label> <span class="dados-dialog"></span></div>
+                    <div> <label for="">ESTADO: </label> <span class="dados-dialog"></span></div>
+                    <div> <label for="">Gênero: </label> <span class="dados-dialog"> </span></div>
+                </div>
+                <div class="botoes">
+                    <button class="voltar">
+                        <div>
+                            <p>&larr; Não, alterar dados</p>
+                        </div>
+                    </button>
+                    <button type="button" class="iniciar">
+                        <div>
+                            <p>Sim, começar quiz &rarr;</p>
+                        </div>
+                    </button>
+                </div>
+            </dialog>
         </main>
         <div class="img-fundo">
             <img src="../../assets/images/fundos/fundoCadastro.jpg">
         </div>
     </div>
-    <script src="../../src/cadastro.js"></script>
+    <script type="module" src="../../src/cadastro/subirUsuario.js"></script>
+
 </body>
 </html>
