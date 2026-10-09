@@ -1,0 +1,63 @@
+main{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+        "pergunta pergunta"
+        "alternativas botao"
+    ;
+}
+
+.caixa-pergunta{
+    grid-area: pergunta;
+    justify-self: flex-end;
+    margin-top: 8vh;
+    margin-right: 10vw;
+    font-size: 0.5em;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #00000048;
+    color: aliceblue;
+}
+
+.caixa-alternativas{
+    grid-area: alternativas;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    height: 80px;
+    margin-top: 56vh;
+    margin-left: 50px;
+    gap: 5px 10px;
+    justify-self: center;
+}
+
+.alternativa{
+    background-color: #FDFBFD;
+    color: #494949;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 30.3vw;
+    font-size: 1.8em;
+}
+
+.alternativa input{
+    flex-shrink: 0;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 1.5vw;
+}
+
+.alternativa input:checked{
+    background: url(../../../assets/images/seta.png) no-repeat center / contain;
+}
+
+.alternativa h2{
+    margin-left: 1.5vw;
+}
