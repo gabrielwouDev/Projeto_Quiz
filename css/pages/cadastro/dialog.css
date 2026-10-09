@@ -1,0 +1,46 @@
+dialog{
+    justify-self: center;
+    align-self: center;
+    width: 40%;
+    height: 40%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 1em  rgb(0 0 0  / 0.3);
+}
+
+dialog[open]{
+    display: grid;
+}
+
+dialog::backdrop{
+    background-color: rgb(0 0 0  / 0.5);
+}
+
+
+
+dialog h1{
+    font-size: 2em;
+    justify-self: center;
+}
+
+.dados{
+    font-size: 1.5em;
+    margin-left: 40px;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: end;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.voltar{
+    color: black;
+    background-color: rgb(221, 220, 220);
+}
+
+.voltar:hover{
+    background-color: rgb(184, 182, 182);
+}

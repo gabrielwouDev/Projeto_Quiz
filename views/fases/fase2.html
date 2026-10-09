@@ -3,47 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/fases/fundo.css">    
-    <link rel="stylesheet" href="../../css/fases/main.css"> 
-    <link rel="stylesheet" href="../../css/fases/botao.css"> 
-    <link rel="stylesheet" href="../../css/fases/moldura.css"> 
-    <link rel="stylesheet" href="../../css/fases/personagens.css"> 
-    <title>Fase 2</title>
+    <title>fase 2</title>
+    <link rel="stylesheet" href="../../css/fases/fase2/fundo.css">
+    <link rel="stylesheet" href="../../css/fases/fase2/main.css">
+    <link rel="stylesheet" href="../../css/fases/fase2/botao.css">
+    <style>
+        @font-face {
+            font-family: 'pokemonPixel';
+            src: url(../../assets/fontes/pokemonClassic.ttf) format("truetype");
+        }
+
+        body{
+            font-family: 'pokemonPixel';
+        }
+    </style>
 </head>
 <body>
-    <div class="fundo">
-        <img src="../../assets/images/Rotom_perguntas2.png" class="moldura">
-        <main>
-            <div class="caixa-pergunta">
-                <h1>Escolha um movimento para atacar o pokémon oponente</h1>           
-            </div>
-            <img src="../../assets/images/batalha-hud.jpg" class="batalha">
-            <div class="caixa-alternativas" id="perguntas-fase2">
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="eletrico">
-                    <h2>Investida</h2>
-                </label>
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="fogo">
-                    <h2>Mordida</h2>
-                </label>
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="agua">
-                    <h2>Enrolar</h2>
-                </label>
-                <label class="alternativa">
-                    <input type="radio" name="escolha" value="grama">
-                    <h2>Cabeçada</h2>
-                </label>
-            </div>
-            <button class="avancar" id="botao-fase2">
-                <div>
-                    <h1>Continuar </h1>
-                    <h1>&rarr;</h1>
-                </div>
-            </button>
-        </main>
+    <div class="video">
+        <video autoplay loop muted playsinline id="videoPokemon">
+            <source src="../../assets/media/Batalha-Idle2.mp4" type="video/mp4">
+        </video>
     </div>
+    <main>
+        <div class="caixa-pergunta">
+            <h1>Escolha um movimento para atacar o pokémon oponente</h1>       
+        </div>
+        <div class="caixa-alternativas">
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="eletrico">
+                <h2>Investida</h2>
+            </label>
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="fogo">
+                <h2>Mordida</h2>
+            </label>
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="agua">
+                <h2>Enrolar</h2>
+            </label>
+            <label class="alternativa">
+                <input type="radio" name="escolha" value="grama">
+                <h2>Cabeçada</h2>
+            </label>
+        </div>
+        <button class="avancar" id="botao-fase2">
+            <div>
+                <h1>Continuar </h1>
+                <h1>&rarr;</h1>
+            </div>
+        </button>
+    </main>
     <script>
         const nPergunta = "pergunta2"
         const proximaPagina = "../fases/fase3.html"
