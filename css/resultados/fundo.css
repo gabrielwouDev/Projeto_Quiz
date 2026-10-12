@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding: 0;
-    z-index: 1;
 }
 
 body{
@@ -15,7 +14,7 @@ body{
 
 .pokemon-fundo{
     position: absolute;
-    margin-left: 40%;
+    margin-left: 45%;
 }
 
 #agua{

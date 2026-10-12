@@ -1,0 +1,58 @@
+.editar-dialog{
+    position: fixed;
+    flex-direction: column;
+    inset: 0;
+    margin: auto;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 1em  rgb(0 0 0  / 0.3);
+    z-index: 4;
+}
+
+.editar-dialog[open]{
+    display: flex;
+}
+
+.editar-dialog p{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.respostas{
+    margin-top: 20px;
+}
+
+.respostas p{
+    font-size: 1.3em;
+}
+
+.respostas input{
+    margin-top: 5px;
+}
+
+.campo select{
+    margin-top: 5px;
+}
+
+.botoes-editar{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.botoes-editar button{
+    margin-left: 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.cancelar{
+    color: black;
+    background-color: rgb(221, 220, 220);
+}
+
