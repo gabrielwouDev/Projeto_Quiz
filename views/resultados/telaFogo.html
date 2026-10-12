@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../css/resultados/botao.css">
     <link rel="stylesheet" href="../../css/resultados/tabela.css">
     <link rel="stylesheet" href="../../css/resultados/dialogEditar.css">
+    <link rel="stylesheet" href="../../css/resultados/dialogDeletar.css">
 
     <title>Resultado</title>
 </head>
@@ -103,6 +104,18 @@
                     </button>
                 </div>
             </dialog>
+            <dialog class="deletar-dialog">
+                <p>Deletar Usuario</p>
+                <input type="number" id="idUsuario-deletar" placeholder="Número de id do usuário">
+                <div class="botoes-deletar">
+                    <button type="button" class="cancelar-deletar">
+                        <p>Cancelar</p>
+                    </button>
+                    <button type="button" class="confirmar-deletar">
+                        <p>Confirmar</p>
+                    </button>
+                </div>
+            </dialog>
         </div>
         <div class="caixa-sugestoes">
             <div class="titulo">
@@ -141,6 +154,7 @@
 
     <script type="module" src="../../src/tabela/tbRespostas.js"></script>
     <script type="module" src="../../src/telaFinal/dialogEditar.js"></script>
+    <script type="module" src="../../src/telaFinal/dialogDeletar.js"></script>
 
 </body>
 </html>

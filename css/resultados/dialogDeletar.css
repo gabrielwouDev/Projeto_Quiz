@@ -1,0 +1,46 @@
+.deletar-dialog{
+    position: fixed;
+    flex-direction: column;
+    inset: 0;
+    margin: auto;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 1em  rgb(0 0 0  / 0.3);
+    z-index: 4;
+}
+
+.deletar-dialog[open]{
+    display: flex;
+}
+
+.deletar-dialog p{
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.deletar-dialog input{
+    margin-top: 20px;
+    transform: scale(1.5);
+}
+
+.botoes-deletar{
+    display: flex;
+    margin-top: 50px;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.botoes-deletar button{
+    margin-left: 0;
+    width: 130px;
+    height: 50px;
+    border: none;
+}
+
+.cancelar-deletar{
+    color: black;
+    background-color: rgb(221, 220, 220);
+}

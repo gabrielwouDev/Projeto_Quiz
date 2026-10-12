@@ -60,7 +60,12 @@ async function editarRespostas(){
     let resp = await fetch(url, options)
     let dados = await resp.json()
 
-    alert('Respostas atualizadas com sucesso!')
+    if (!resp.ok) {
+        alert(dados.erro)
+        return
+    }
+    
+    alert(dados.mensagem)
     modal.close()
 }
 
