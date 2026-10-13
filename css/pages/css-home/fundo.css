@@ -1,12 +1,10 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
 }
 
-body{
-    font-family: sans-serif;
-    background-color: #a7ddf2;
-    box-sizing: border-box;
-    overflow: hidden;
-}   
-    
+main {
+    color: white;
+    background-color: #002451;
+    overflow-x: hidden;
+}
