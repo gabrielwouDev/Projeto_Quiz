@@ -5,6 +5,7 @@
 
 main {
     color: white;
-    background-color: #002451;
+    background-image: linear-gradient(to bottom, #002451 1%,  #aafaff 99%);
     overflow-x: hidden;
 }
+

@@ -1,3 +1,62 @@
 .bg_champions{
-    transform: translate(-500px,0px);
+    transform: translate(-20vw,0px);
+}
+
+.bg_img {
+    position: relative;
+}
+
+.Iniciar {
+    position: absolute;
+    margin-left: 30%;
+    align-self: center;
+}
+
+.titulo{
+    width: 30px;
+    height: auto;
+    display: flex;
+}
+
+.pokebola{
+    width: 50px;
+    height: 50px;
+}
+
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100vw;
+    height: 80vw;
+}
+
+.grid div {
+    border: 10px;
+}
+
+.imageGrid{
+    width: 900px;
+    height: auto;
+    position: absolute;
+}
+
+.ash{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    
+    bottom: 00px;
+    left: 40px;
+}
+
+.mew{
+    position: absolute;
+    width: 650px;
+    height: auto;
+
+    bottom: 900px;
+    left: 1100px;
 }
