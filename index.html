@@ -3,51 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/pages/css-home/fundo.css"> 
-    <link rel="stylesheet" href="css/pages/css-home/main.css"> 
-    <link rel="stylesheet" href="css/pages/css-home/moldura.css"> 
-    <link rel="stylesheet" href="css/pages/css-home/botao.css"> 
     <title>Quiz pokémon</title>
+    <link rel="stylesheet" href="./css/pages/css-home/main.css">
+    <link rel="stylesheet" href="./css/pages/css-home/fundo.css">
+    <link rel="stylesheet" href="./css/pages/css-home/botao.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <div class="fundo">
-        <img src="./assets/images/Rotom_perguntas2.png" class="moldura">
-        <main>
-            <div class="conteudo">
-                <p>
-                    BZZT! Saudações, treinador! Eu sou a Rotom Pokédex,
-                    a enciclopédia Pokémon mais elétrica e inteligente que existe!
-                </p>
-                <p>
-                    Hoje eu vou analisar sua personalidade, suas escolhas e
-                    seu estilo de batalha para descobrir qual elemento combina
-                    mais com você! BIP BOP!
-                </p>
-                <p>
-                    Será que você possui a intensidade ardente do tipo &#x1F525;<strong>Fogo?</strong><br>
-                    A calma e adaptação do tipo &#x1F4A7;<strong>Água?</strong><br>
-                    A conexão natural e estratégica do tipo &#x1F343;<strong>Planta?</strong><br>
-                    Ou a energia rápida e imprevisível do tipo &#x26A1;<strong>Elétrico</strong>?
-                </p>
-                <p>
-                    Responda cada pergunta com atenção, treinador!
-                    No final deste teste super tecnológico, eu revelarei
-                    qual elemento representa sua verdadeira essência!
-                </p>
-                <p>
-                    Sistema iniciado... Preparando análise de compatibilidade elemental...<br>
-                    Pressione "Começar" para iniciar o Quiz!
-                </p>
-                <a class="link-botao" href="./views/cadastro/cadastro.html">
-                <button>
-                    <div>
-                        <h1>Começar</h1>
-                        <h1>&rarr;</h1>
-                    </div>
-                </button>
-                </a>
+    <main>
+        <div class="titulo">
+        <img src="./assets/images/ícone_pokebola_vermelha.png" class="pokebola">
+        <h1>Pokequiz</h1>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </main>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./assets/images/pokemons/kyogre.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/images/pokemons/groudon.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="./assets/images/pokemons/zygarde.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    <br>
+    <h2>Neste quiz de pokemon vamos passar por varios momentos <br> importantes da franquia desde jogos, animes, cartas e muito mais <br> tudo para descobrir qual seria o seu tipo no universo de pokemon<br> preparado para a aventura?</h2>
+    <br>
+    <div class="grid">
+        <div><img src="./assets/images/texto1.png" class="imageGrid"></div>
+        <div><img src="./assets/images/fundos/bg_pokebola.jpg" class="imageGrid"></div>
+        <div><img src="./assets/images/ash.webp" class="ash"><img src="./assets/images/pokemons/mew.png" class="mew"></div>
+        <div><img src="./assets/images/texto2.png" class="imageGrid"></div>
     </div>
+
+    <div class="bg_img"> 
+        <button class="Iniciar">
+            <div>
+                <p>Iniciar Aventura</p>
+            </div>
+        </button>
+        <img src="./assets/images/fundos/bg_pokemonChampions.jpg" class="bg_champions">    
+    </div>
+    </main>
+
+    <script>
+        let btn = document.querySelector('.Iniciar');
+        btn.addEventListener('click', () => window.location.href = './views/cadastro/cadastro.html')
+    </script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,28 +1,62 @@
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.bg_champions{
+    transform: translate(-20vw,0px);
 }
 
-.conteudo{
-    margin-top: 7vh;
-    width: 45vw;
-    max-width: 800px;
-    min-width: 400px;
-    padding: 20px 30px;
-    background-color: #dff4ff;
-    border: 10px solid #5aa7d8;
-    border-radius: 25px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
+.bg_img {
+    position: relative;
 }
 
-.conteudo p{
-    margin: 10px 0;
-    line-height: 1.5;
-    font-size: 1.1rem;
+.Iniciar {
+    position: absolute;
+    margin-left: 30%;
+    align-self: center;
+}
+
+.titulo{
+    width: 30px;
+    height: auto;
+    display: flex;
+}
+
+.pokebola{
+    width: 50px;
+    height: 50px;
+}
+
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100vw;
+    height: 80vw;
+}
+
+.grid div {
+    border: 10px;
+}
+
+.imageGrid{
+    width: 900px;
+    height: auto;
+    position: absolute;
+}
+
+.ash{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    
+    bottom: 00px;
+    left: 40px;
+}
+
+.mew{
+    position: absolute;
+    width: 650px;
+    height: auto;
+
+    bottom: 900px;
+    left: 1100px;
 }

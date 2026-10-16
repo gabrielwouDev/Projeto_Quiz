@@ -1,12 +1,11 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
 }
 
-body{
-    font-family: sans-serif;
-    background-color: #a7ddf2;
-    box-sizing: border-box;
-    overflow: hidden;
-}   
-    
+main {
+    color: white;
+    background-image: linear-gradient(to bottom, #002451 1%,  #aafaff 99%);
+    overflow-x: hidden;
+}
+
