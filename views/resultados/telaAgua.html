@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../css/resultados/main.css">
     <link rel="stylesheet" href="../../css/resultados/botao.css">
     <link rel="stylesheet" href="../../css/resultados/tabela.css">
+    <link rel="stylesheet" href="../../css/resultados/dialogEditar.css">
+    <link rel="stylesheet" href="../../css/resultados/dialogDeletar.css">
 
     <title>Resultado</title>
 </head>
@@ -33,6 +35,87 @@
                 
                 </tbody>
             </table>
+            <div class="botoes-crud">
+                <button type="button" class="editar" id="botao-agua">
+                    <h1>Editar</h1>
+                </button>
+                <button type="button" class="deletar" id="botao-agua">
+                    <h1>Deletar</h1>
+                </button>
+            </div>
+            <dialog class="editar-dialog">
+                <p>Editar Respostas</p>
+                <div class="respostas">
+                    <p>Usuário:</p>
+                    <input type="number" id="idUsuario" placeholder="Número de id do usuário">
+                    <p>Selecione as novas respostas que serão inseridas:</p>
+                    <div class="campo">
+                        <label></label>
+                        <select id="p1">
+                            <option value="fogo">Giovanni</option>
+                            <option value="eletrico">Kissera</option>
+                            <option value="grama">Fruta Sitrus</option>
+                            <option value="agua">Capa Gigante</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label></label>
+                        <select id="p2">
+                            <option value="eletrico">Investida</option>
+                            <option value="fogo">Mordida</option>
+                            <option value="agua">Enrolar</option>
+                            <option value="grama">Cabeçada</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label></label>
+                        <select id="p3">
+                            <option value="fogo">Corredor cheio de batalhas consecutivas.</option>
+                            <option value="grama">Floresta onde cada escolha altera o caminho..</option>
+                            <option value="agua">Labirinto com mecanismos e enigmas..</option>
+                            <option value="eletrico">Sala tecnológica cheia de armadilhas rápidas.</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label></label>
+                        <select id="p4">
+                            <option value="grama">Observar o ambiente ao redor e planejar a melhor abordagem.</option>
+                            <option value="fogo">Entrar em ação imediatamente e tentar capturá-lo sem hesitar.</option>
+                            <option value="agua">Analisar o comportamento do Pokémon antes de tomar qualquer decisão.</option>
+                            <option value="eletrico">Testar rapidamente diferentes estratégias e recursos disponíveis no jogo.</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label></label>
+                        <select id="p5">
+                            <option value="agua">Jogar uma pokebola</option>
+                            <option value="grama">Jogar uma fruta</option>
+                            <option value="fogo">Iniciar uma batalha</option>
+                            <option value="eletrico">Correr</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="botoes-editar">
+                    <button type="button" class="cancelar">
+                        <p>Cancelar</p>
+                    </button>
+                    <button type="button" class="confirmar" id="botao-agua">
+                        <p>Confirmar</p>
+                    </button>
+                </div>
+            </dialog>
+            <dialog class="deletar-dialog">
+                <p>Deletar Usuario</p>
+                <input type="number" id="idUsuario-deletar" placeholder="Número de id do usuário">
+                <div class="botoes-deletar">
+                    <button type="button" class="cancelar-deletar">
+                        <p>Cancelar</p>
+                    </button>
+                    <button type="button" class="confirmar-deletar" id="botao-agua">
+                        <p>Confirmar</p>
+                    </button>
+                </div>
+            </dialog>
         </div>
         <div class="caixa-sugestoes">
             <div class="titulo">
@@ -70,5 +153,7 @@
     </main>
 
     <script type="module" src="../../src/tabela/tbRespostas.js"></script>
+    <script type="module" src="../../src/telaFinal/dialogEditar.js"></script>
+    <script type="module" src="../../src/telaFinal/dialogDeletar.js"></script>
 </body>
 </html>

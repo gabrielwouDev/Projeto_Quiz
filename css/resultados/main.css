@@ -6,7 +6,7 @@ main{
         "topo topo"
         "tabela sugestoes"
         "botao botao";
-    z-index: 2;
+    z-index: 1;
 }
 
 .caixa-topo{
@@ -20,6 +20,7 @@ main{
     align-items: center;
     font-size: 2em;
     border-radius: 15px;
+    z-index: 1;
 }
 
 #caixa-grama{
@@ -44,7 +45,7 @@ main{
     color: rgb(235, 235, 235);
     background-color: #00000059;
     border-radius: 15px;
-    
+    z-index: 2;
 }
 
 .titulo{
