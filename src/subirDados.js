@@ -1,7 +1,12 @@
+import { iniciar } from "./iniciar.js";
+
+iniciar();
 
 let btn = document.querySelector('.avancar')
 
 btn.addEventListener('click',exibir)
+
+
 
 function exibir(){
     let escolha = document.querySelector('input[name="escolha"]:checked')

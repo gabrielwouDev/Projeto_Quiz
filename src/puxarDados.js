@@ -1,3 +1,7 @@
+import { iniciar } from "./iniciar.js";
+
+iniciar();
+
 const resultados = JSON.parse(sessionStorage.getItem('resultados'));
 const usuario = JSON.parse(sessionStorage.getItem('pessoa')) 
 
