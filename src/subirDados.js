@@ -6,8 +6,6 @@ let btn = document.querySelector('.avancar')
 
 btn.addEventListener('click',exibir)
 
-
-
 function exibir(){
     let escolha = document.querySelector('input[name="escolha"]:checked')
     if(escolha === null){
